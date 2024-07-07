@@ -2,6 +2,7 @@
 
 # Class for Post Model
 class Post < ApplicationRecord
+  has_rich_text :content
+
   validates :title, presence: true
-  validates :body, presence: true, length: { minimum: 1 }
 end
