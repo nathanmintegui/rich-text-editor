@@ -15,8 +15,6 @@ Action Text also allows us to upload/save files, at the moment it only saves
 locally, so if you want to save on another service like amazon S3, it should
 require some configuration.
 
-<img src="./img/2024-07-07_19-36.png" widht="400" height="400">
-
 It provides basic features like a post and read them all at the main screen.
 
 ## Specs
