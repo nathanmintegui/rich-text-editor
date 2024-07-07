@@ -1,24 +1,53 @@
-# README
+# Rich Text Editor
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Just a simple web app to test some features of Rails Action Text.
 
-Things you may want to cover:
+<img src="./img/2024-07-07_19-17.png" widht="200" height="400">
 
-* Ruby version
+<img src="./img/2024-07-07_19-33.png" widht="200" height="400">
 
-* System dependencies
+## Description
 
-* Configuration
+The whole application runs on Puma web server, make shure to have the right
+version of ruby and rails installed.
+
+Action Text also allows us to upload/save files, at the moment it only saves
+locally, so if you want to save on another service like amazon S3, it should
+require some configuration.
+
+<img src="./img/2024-07-07_19-36.png" widht="400" height="400">
+
+It provides basic features like a post and read them all at the main screen.
+
+## Specs
+
+* Ruby version 3.3.0
+* Rails version 7.1.3.4
+
+* System dependencies 
+    - libvips
+    - ffmpeg
+    - SQLite
+
+* Gem dependencies
+```sh
+bundle install
+```
 
 * Database creation
+```sh
+rails db:create
+```
 
 * Database initialization
+```sh
+rails db:migrate
+```
 
-* How to run the test suite
+* Start server
+```sh
+rails server 
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+The application should be running on http://localhost:3000
 
-* Deployment instructions
-
-* ...
